@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react"
 import Navbar from "./Navbar"
+import Transactions from "./Transactions"
 
 const API = "http://localhost:8001/transactions"
 
@@ -14,7 +15,8 @@ function App() {
 
     return (
         <div className="rootDiv">
-            <Navbar />
+            <div><Navbar /></div>
+            <Transactions transactions={transaction} />
         </div>
     )
 
