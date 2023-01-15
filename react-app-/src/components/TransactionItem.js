@@ -7,6 +7,7 @@ function TransactionItem(props) {
             <td>{props.description}</td>
             <td>{props.category}</td>
             <td>{props.amount}</td>
+            
         </tr>
     )
 }
