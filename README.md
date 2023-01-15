@@ -52,7 +52,7 @@ To access this project on you local computer, follow the steps below
 ### Installations:
 * Run <code>npm install</code> on the terminal
 * Run <code>npm init</code> to add the node modules and json package files
-* Run <code>json-server --watch db.json</code> on your terminal to start the backend json server
+* Run <code>npx json-server --watch db.json</code> on your terminal to start the backend json server
    * (This enables the user to view the list of films and access their content on the browser and buy tickets)
 
    * or
