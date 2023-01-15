@@ -15,7 +15,7 @@ function App() {
 
     return (
         <div className="rootDiv">
-            <div><Navbar /></div>
+            <Navbar />
             <Transactions transactions={transaction} />
         </div>
     )
