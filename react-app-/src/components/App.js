@@ -1,14 +1,16 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import Navbar from "./Navbar"
 
 const API = "http://localhost:8001/transactions"
 
 function App() {
+    const [transaction, setTransaction] = useState([])
     useEffect(() => {
         fetch(API)
         .then((response) => response.json())
-        .then((transaction) => console.log(transaction))
-    })
+        .then((transaction) => setTransaction(transaction))
+    }, [])
+    console.log(transaction)
 
     return (
         <div className="rootDiv">
