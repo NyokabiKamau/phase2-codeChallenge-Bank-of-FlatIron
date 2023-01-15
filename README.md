@@ -51,13 +51,18 @@ To access this project on you local computer, follow the steps below
 
 ### Installations:
 * Run <code>npm install</code> on the terminal
+
+* Run <code>npm install -g npm</code> This will make sure you have the newest version of npm. Once this is installed, you should be able to run the npx command.
+
 * Run <code>npm init</code> to add the node modules and json package files
+
 * Run <code>npx json-server --watch db.json</code> on your terminal to start the backend json server
    * (This enables the user to view the list of films and access their content on the browser and buy tickets)
 
    * or
    
    * <code>npm start</code>
+
 * Open a new terminal and navigate to code_challenges 
 * Open Visual Studio Code:
     - Run <code>code .</code>
@@ -66,15 +71,6 @@ To access this project on you local computer, follow the steps below
 ### Access
 To access the content on the browser:
 * click on this link ()
-<!-- 
-   * or
-
-* Mac users: run <code>open index.html</code> on your terminal
-* WSL/Ubuntu users: run <code>explorer.exe index.html</code> on your terminal
-* or 
-* Visual Studio Code:
-    - Install <code>Live Server</code> extension
-    - Click on <code>Go live</code> on the bottom right corner -->
 
 # Author
 This project was contributed to by: 
