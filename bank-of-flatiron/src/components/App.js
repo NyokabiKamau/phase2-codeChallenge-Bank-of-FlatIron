@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from "react"
 import Navbar from "./Navbar"
 import Transactions from "./Transactions"
-import TransactionForm from "./TransactionForm"
-import App from "./App.css"
 
 const API = "http://localhost:8001/transactions"
 
@@ -18,7 +16,6 @@ function App() {
     return (
         <div className="rootDiv">
             <Navbar />
-            <TransactionForm />
             <Transactions transactions={transaction} />
         </div>
     )
