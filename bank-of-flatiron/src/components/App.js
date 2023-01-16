@@ -17,6 +17,7 @@ function App() {
 
     function handleSubmission(Transactions) {
         console.log(Transactions)
+        setTransaction(transaction => [...transaction, Transactions])
     }
 
     return (
