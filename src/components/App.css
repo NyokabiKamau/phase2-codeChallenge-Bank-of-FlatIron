@@ -45,11 +45,30 @@ padding: 5px;
 height: 25px;
 font-size: 16px;
 }
-#form-item button {
+
+#form-item button  {
 height: 25px;
-margin-top: 0px;
-border-radius: 0;
-outline: 0;
-border: 0;
+margin-top: 5px;
 cursor: pointer;
+width: 100%;
+border: 1px solid rgb(3, 63, 87)
+}
+
+table {
+width: 100%;
+border-radius: 8px;
+}
+
+tr,td,th,table {
+border: 1px solid;
+}
+
+th {
+background: #081848;
+color: white;
+padding: 6px;
+}
+
+td {
+padding: 3px;
 }
