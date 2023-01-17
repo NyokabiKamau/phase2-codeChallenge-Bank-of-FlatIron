@@ -70,7 +70,7 @@ To access this project on you local computer, follow the steps below
 
 ### Access
 To access the content on the browser:
-* click on this link ()
+* click on this link (phase2-code-challenge-bank-of-flat-iron.vercel.app/)
 
 # Author
 This project was contributed to by: 
