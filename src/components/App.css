@@ -72,3 +72,8 @@ padding: 6px;
 td {
 padding: 3px;
 }
+
+tr:hover {
+    color: rgb(31, 142, 144);
+    font-weight: 600;
+  }
