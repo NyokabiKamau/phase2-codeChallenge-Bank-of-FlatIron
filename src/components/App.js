@@ -4,7 +4,7 @@ import Transactions from "./Transactions"
 import TransactionForm from "./TransactionForm"
 import "./App.css"
 
-const API = "http://localhost:8001/transactions"
+const API = "https://api.npoint.io/4fe36224ecb93bdeec6a/transactions/"
 
 function App() {
     const [transaction, setTransaction] = useState([])
