@@ -3,8 +3,10 @@ import Navbar from "./Navbar"
 import Transactions from "./Transactions"
 import TransactionForm from "./TransactionForm"
 import "./App.css"
+import SearchForm from "./SearchForm"
 
 const API = "https://api.npoint.io/4fe36224ecb93bdeec6a/transactions/"
+// const local = "http://localhost:8001/transactions"
 
 function App() {
     const [transaction, setTransaction] = useState([])
@@ -35,6 +37,7 @@ function App() {
     return (
         <div className="rootDiv">
             <Navbar />
+            <SearchForm />
             <TransactionForm prop={handleSubmission} />
             <Transactions transactions={transaction} />
         </div>

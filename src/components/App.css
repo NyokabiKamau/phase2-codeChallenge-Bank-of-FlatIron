@@ -76,4 +76,31 @@ padding: 3px;
 tr:hover {
     color: rgb(31, 142, 144);
     font-weight: 600;
+}
+
+#search-form {
+    display: flex;
+    width: 300px;
+    border: 1px solid rgb(204, 215, 221);
+    margin: 5px 0;
+    height: 40px;
+    border-radius: 10px;
+    padding: 4px;
+    justify-content: space-between;
+  }
+  
+  #search-input {
+    text-align: left;
+    flex: 1;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    width: 80%;
+  }
+  
+  #search-form button {
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid rgb(3, 63, 87) 
   }
