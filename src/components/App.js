@@ -5,11 +5,14 @@ import TransactionForm from "./TransactionForm"
 import "./App.css"
 import SearchForm from "./SearchForm"
 
+
 const API = "https://api.npoint.io/4fe36224ecb93bdeec6a/transactions/"
 // const local = "http://localhost:8001/transactions"
 
 function App() {
     const [transaction, setTransaction] = useState([])
+    const [search, setSearch] = useState("")
+
     useEffect(() => {
         fetch(API)
         .then((response) => response.json())
@@ -34,15 +37,19 @@ function App() {
     // .then(data =>  setTransaction(transaction => [...transaction, data])
     // .catch(error => console.log(error)))
 
+
+    const filtered = transaction.filter(data => {
+        data.description.toLowerCase().includes(search.toLocaleLowerCase()) || data.category.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+    })
+
     return (
         <div className="rootDiv">
             <Navbar />
-            <SearchForm />
+            <SearchForm search={search} setSearch={setSearch}/>
             <TransactionForm prop={handleSubmission} />
-            <Transactions transactions={transaction} />
+            <Transactions transactions={transaction} setTransactions={setTransaction} search={search} />
         </div>
     )
-
 }
 
 export default App

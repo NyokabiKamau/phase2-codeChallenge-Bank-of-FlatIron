@@ -11,6 +11,12 @@ function TransactionForm({prop}) {
     function addTransaction(e) {
         e.preventDefault()
         prop(formItem)
+        setFormItem({
+        date:"", 
+        description:"",
+        category:"", 
+        amount:0,  
+    })
     } 
 
     function handleChange(e) {
@@ -18,15 +24,17 @@ function TransactionForm({prop}) {
     }
 
     return (
-        <form onChange={handleChange} id="form-item" onSubmit={addTransaction} >
+        <form onSubmit={addTransaction} id="form-item" >
             <div className="form-inputs">
-                <label htmlFor="date">Date</label>
-                <input value={formItem.date} name="date" type="date" id="date"/>
-                <input value={formItem.description} name="description" type="text" placeholder="Description" className="text-input"/>
-                <input value={formItem.category} name="category" type="text" placeholder="Category" className="text-input"/>
-                <input name="amount" value={formItem.amount} type="number"/>
+                <input onChange={handleChange} value={formItem.date} name="date" type="date" id="date"/>
+
+                <input onChange={handleChange} value={formItem.description} name="description" type="text" placeholder="Description" className="text-input"/>
+
+                <input onChange={handleChange} value={formItem.category} name="category" type="text" placeholder="Category" className="text-input"/>
+
+                <input onChange={handleChange} name="amount" value={formItem.amount} type="number"/>
             </div>
-            <button >Add Transaction</button>
+            <button>Add Transaction</button>
         </form>
     )
 }
