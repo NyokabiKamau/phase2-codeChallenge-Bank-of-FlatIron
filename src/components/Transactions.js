@@ -1,7 +1,7 @@
 import React from "react";
 import TransactionItem from "./TransactionItem";
 
-function Transactions({transactions, setTransactions, search}) {
+function Transactions({transactions, search}) {
 
   let transactionList;
 
@@ -11,6 +11,7 @@ function Transactions({transactions, setTransactions, search}) {
         transaction.description.toLowerCase().includes(search.toLowerCase()) || transaction.category.toLowerCase().includes(search.toLowerCase())
       )
     })
+        
     transactionList = filteredTransactions.map((transaction) => (    
       <TransactionItem
         key={transaction.id}
@@ -37,5 +38,6 @@ function Transactions({transactions, setTransactions, search}) {
         </table>
     )
 }
+
 
 export default Transactions

@@ -6,8 +6,7 @@ function TransactionItem(props) {
             <td>{props.date}</td>
             <td>{props.description}</td>
             <td>{props.category}</td>
-            <td>{props.amount}</td>
-            
+            <td>{props.amount}</td> 
         </tr>
     )
 }

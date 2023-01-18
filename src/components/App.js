@@ -38,9 +38,9 @@ function App() {
     // .catch(error => console.log(error)))
 
 
-    const filtered = transaction.filter(data => {
-        data.description.toLowerCase().includes(search.toLocaleLowerCase()) || data.category.toLocaleLowerCase().includes(search.toLocaleLowerCase())
-    })
+    // const filtered = transaction.filter(data => {
+    //     data.description.toLowerCase().includes(search.toLocaleLowerCase()) || data.category.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+    // })
 
     return (
         <div className="rootDiv">
