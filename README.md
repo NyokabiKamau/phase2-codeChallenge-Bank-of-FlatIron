@@ -63,7 +63,7 @@ To access this project on you local computer, follow the steps below
 ### Access
 To access the content on the browser:
 
-* click on this link (https://phase2-code-challenge-bank-of-flat-iron.vercel.app/)
+* click on this link (https://63c79509f97b1a3949248694--earnest-kitsune-4fcb47.netlify.app/)
 
 * Run <code>npm start</code> on your terminal to start the backend json server
    * (This enables the user to view the list of bank transactions)
