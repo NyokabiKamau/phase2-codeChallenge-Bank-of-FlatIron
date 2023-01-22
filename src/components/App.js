@@ -25,22 +25,6 @@ function App() {
         setTransaction(transaction => [...transaction, Transactions])
     }
 
-    // const persist = {
-    //     method: "POST",
-    //     headers:{
-    //         "Content-Type":"application/json"
-    //     },
-    //     body: JSON.stringify(Transactions)
-    // }
-    // fetch(API, persist)
-    // .then(response => response.json())
-    // .then(data =>  setTransaction(transaction => [...transaction, data])
-    // .catch(error => console.log(error)))
-
-
-    // const filtered = transaction.filter(data => {
-    //     data.description.toLowerCase().includes(search.toLocaleLowerCase()) || data.category.toLocaleLowerCase().includes(search.toLocaleLowerCase())
-    // })
 
     return (
         <div className="rootDiv">
